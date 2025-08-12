@@ -26,52 +26,62 @@
   </head>
   <body>
     <main>
-      <section class="informationSection">
-        <h1 class="heading">Stay updated!</h1>
-        <h3 class="headingTwo">
-          Join 60,000+ product managers receiving monthly updates on:
-        </h3>
-        <ul class="ulList">
-          <li>
-            <img src="assets/images/icon-list.svg" alt="" class="list-icon" />
-            Product discovery and building what matters
-          </li>
-          <li>
-            <img
-              src="assets/images/icon-list.svg"
-              alt=""
-              class="list-icon"
-            />Measuring to ensure updates are a success
-          </li>
-          <li>
-            <img
-              src="assets/images/icon-list.svg"
-              alt=""
-              class="list-icon"
-            />And much more!
-          </li>
-        </ul>
+      <div class="mainContainer">
+        <section class="informationSection">
+          <h1 class="heading">Stay updated!</h1>
+          <h3 class="headingTwo">
+            Join 60,000+ product managers receiving monthly updates on:
+          </h3>
+          <ul class="ulList">
+            <li>
+              <img src="assets/images/icon-list.svg" alt="" class="list-icon" />
+              Product discovery and building what matters
+            </li>
+            <li>
+              <img
+                src="assets/images/icon-list.svg"
+                alt=""
+                class="list-icon"
+              />Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img
+                src="assets/images/icon-list.svg"
+                alt=""
+                class="list-icon"
+              />And much more!
+            </li>
+          </ul>
 
-        <form action="">
-          <label for="email" class="email">Email address</label>
-          <input
-            type="text"
-            name="email"
-            placeholder=" email@company.com"
-            class="inputField"
-          />
-          <button class="submitButton">Subscribe to monthly newsletter</button>
-        </form>
-      </section>
-      <section class="figureSection">
-        <figure>
-          <img
-            src="assets/images/illustration-sign-up-desktop.svg"
-            alt="desktopImage"
-            class="figureImage"
-          />
-        </figure>
-      </section>
+          <form action="" id="form">
+            <div class="errorDiv">
+              <label for="email" class="email">Email address</label>
+              <span id="errorSpan"></span>
+            </div>
+
+            <input
+              type="text"
+              name="email"
+              placeholder=" email@company.com"
+              class="inputField"
+              id="inputF"
+            />
+            <button type="submit" class="submitButton" id="sbutton">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </section>
+        <section class="figureSection">
+          <figure>
+            <img
+              src="assets/images/illustration-sign-up-desktop.svg"
+              alt="desktopImage"
+              class="figureImage"
+            />
+          </figure>
+        </section>
+      </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -9,6 +9,10 @@ body {
 }
 
 main {
+  display: block;
+}
+
+.mainContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,20 +21,20 @@ main {
   border-radius: 30px;
   background-color: #FFFFFF;
 }
-main .informationSection {
+.mainContainer .informationSection {
   height: 100%;
   width: 100%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-main .informationSection .heading {
+.mainContainer .informationSection .heading {
   font-size: 3rem;
   color: #242742;
   margin-top: 5rem;
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
 }
-main .informationSection .headingTwo {
+.mainContainer .informationSection .headingTwo {
   font-size: 16px;
   font-weight: 330;
   color: #242742;
@@ -38,11 +42,11 @@ main .informationSection .headingTwo {
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
 }
-main .informationSection .ulList {
+.mainContainer .informationSection .ulList {
   padding: 0;
   margin-bottom: 2rem;
 }
-main .informationSection .ulList li {
+.mainContainer .informationSection .ulList li {
   list-style: none;
   display: flex;
   align-items: center;
@@ -52,22 +56,31 @@ main .informationSection .ulList li {
   margin-left: 1.5rem;
   font-size: 15px;
 }
-main .informationSection .list-icon {
+.mainContainer .informationSection .list-icon {
   width: 18px;
 }
-main .informationSection form {
+.mainContainer .informationSection form {
   height: 10rem;
   display: flex;
   flex-direction: column;
 }
-main .informationSection form .email {
+.mainContainer .informationSection form .email {
   font-size: 13px;
   color: #242742;
   font-weight: 600;
   margin-bottom: 8px;
   margin-left: 1.5rem;
 }
-main .informationSection form .inputField {
+.mainContainer .informationSection form .errorDiv {
+  display: flex;
+  gap: 10rem;
+}
+.mainContainer .informationSection form #errorSpan {
+  font-size: 12px;
+  color: #FF6155;
+  font-weight: 600;
+}
+.mainContainer .informationSection form .inputField {
   height: 2.7rem;
   width: 21.5rem;
   border-radius: 6px;
@@ -75,15 +88,7 @@ main .informationSection form .inputField {
   margin-bottom: 20px;
   margin-left: 1.5rem;
 }
-main .informationSection form ::-moz-placeholder {
-  color: #949494;
-  padding-left: 15px;
-}
-main .informationSection form ::placeholder {
-  color: #949494;
-  padding-left: 15px;
-}
-main .informationSection form .submitButton {
+.mainContainer .informationSection form .submitButton {
   height: 3rem;
   width: 22rem;
   border-radius: 6px;
@@ -94,10 +99,13 @@ main .informationSection form .submitButton {
   font-size: 14px;
   margin-left: 1.5rem;
 }
-main figure {
+.mainContainer .informationSection form input.inputField {
+  text-indent: 15px;
+}
+.mainContainer figure {
   margin: 0;
 }
-main .figureSection {
+.mainContainer .figureSection {
   height: 100%;
   width: 100%;
   border-top-right-radius: 30px;
@@ -106,7 +114,10 @@ main .figureSection {
   justify-content: center;
   align-items: center;
 }
-main .figureImage {
+.mainContainer .figureImage {
   height: 520px;
   width: 400px;
+}
+.mainContainer #sbutton.test {
+  background-image: linear-gradient(to right, #FF6A3A, #FF527B);
 }/*# sourceMappingURL=styles.css.map */
