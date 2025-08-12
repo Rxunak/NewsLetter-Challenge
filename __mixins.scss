@@ -1,0 +1,22 @@
+@mixin centerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin splitDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+@mixin heightWidth($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin outline($color) {
+  outline: 2px solid $color;
+}

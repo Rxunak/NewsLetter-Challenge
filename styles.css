@@ -1,0 +1,112 @@
+body {
+  background-color: #36384D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  width: 50rem;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+}
+main .informationSection {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+main .informationSection .heading {
+  font-size: 3rem;
+  color: #242742;
+  margin-top: 5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main .informationSection .headingTwo {
+  font-size: 16px;
+  font-weight: 330;
+  color: #242742;
+  line-height: 130%;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main .informationSection .ulList {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+main .informationSection .ulList li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 13px;
+  color: #242742;
+  margin-left: 1.5rem;
+  font-size: 15px;
+}
+main .informationSection .list-icon {
+  width: 18px;
+}
+main .informationSection form {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+main .informationSection form .email {
+  font-size: 13px;
+  color: #242742;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: 1.5rem;
+}
+main .informationSection form .inputField {
+  height: 2.7rem;
+  width: 21.5rem;
+  border-radius: 6px;
+  border: 1px solid #949494;
+  margin-bottom: 20px;
+  margin-left: 1.5rem;
+}
+main .informationSection form ::-moz-placeholder {
+  color: #949494;
+  padding-left: 15px;
+}
+main .informationSection form ::placeholder {
+  color: #949494;
+  padding-left: 15px;
+}
+main .informationSection form .submitButton {
+  height: 3rem;
+  width: 22rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #242742;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 1.5rem;
+}
+main figure {
+  margin: 0;
+}
+main .figureSection {
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .figureImage {
+  height: 520px;
+  width: 400px;
+}/*# sourceMappingURL=styles.css.map */

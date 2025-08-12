@@ -1,0 +1,115 @@
+@import "./_colors";
+@import "./_mixins";
+
+body {
+  background-color: $Blue700;
+  @include centerDiv;
+  @include heightWidth(100vh, 100%);
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  @include splitDiv;
+  @include heightWidth(35rem, 50rem);
+  border-radius: 30px;
+  background-color: $white;
+
+  .informationSection {
+    // @include outline(brown);
+    @include heightWidth(100%, 100%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    .heading {
+      font-size: 3rem;
+      color: $Blue800;
+      margin-top: 5rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .headingTwo {
+      font-size: 16px;
+      font-weight: 330;
+      color: $Blue800;
+      line-height: 130%;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .ulList {
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    .ulList li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 13px;
+      color: $Blue800;
+      margin-left: 1.5rem;
+      font-size: 15px;
+    }
+
+    .list-icon {
+      width: 18px;
+    }
+
+    form {
+      height: 10rem;
+      display: flex;
+      flex-direction: column;
+
+      .email {
+        font-size: 13px;
+        color: $Blue800;
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-left: 1.5rem;
+      }
+
+      .inputField {
+        @include heightWidth(2.7rem, 21.5rem);
+        border-radius: 6px;
+        border: 1px solid $Grey;
+        margin-bottom: 20px;
+        margin-left: 1.5rem;
+      }
+
+      ::placeholder {
+        color: $Grey;
+        padding-left: 15px;
+      }
+
+      .submitButton {
+        @include heightWidth(3rem, 22rem);
+        border-radius: 6px;
+        border: none;
+        background-color: $Blue800;
+        color: $white;
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  figure {
+    margin: 0;
+  }
+  .figureSection {
+    @include heightWidth(100%, 100%);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .figureImage {
+    height: 520px;
+    width: 400px;
+  }
+}
