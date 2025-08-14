@@ -30,6 +30,7 @@ form.addEventListener("submit", function (event) {
     inputField.value
     confirmation.classList.add("activate");
     confirmationText.innerHTML = `A confirmation email has been sent to <b>${inputField.value}</b>. Please open it and click the button inside to confirm your subscription.`;
+    inputField.value = ""
   }
 });
 

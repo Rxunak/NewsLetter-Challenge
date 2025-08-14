@@ -6,6 +6,7 @@ body {
   height: 100vh;
   width: 100%;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 main {
@@ -96,6 +97,7 @@ main {
   margin-bottom: 20px;
   margin-left: 1.5rem;
   background-color: hsl(0, 67%, 91%);
+  color: red;
 }
 .mainContainer .informationSection form #inputF.testError::-moz-placeholder {
   color: red;
@@ -139,7 +141,6 @@ main {
 
 #confirmation {
   display: none;
-  outline: 2px solid black;
   width: 370px;
   height: 370px;
   background-color: #FFFFFF;
@@ -191,4 +192,188 @@ main {
   background-image: linear-gradient(to right, #FF6A3A, #FF527B);
 }
 
-/*---- media query ---*//*# sourceMappingURL=styles.css.map */
+/*---- media query ---*/
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .mainContainer {
+    position: relative;
+    flex-direction: column;
+    height: 48rem;
+    width: 33rem;
+    border-radius: 20px;
+  }
+  .mainContainer .informationSection {
+    top: 22rem;
+    position: absolute;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: auto;
+  }
+  .mainContainer .informationSection .heading {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 2.3rem;
+  }
+  .mainContainer .informationSection .headingTwo {
+    font-size: 16px;
+  }
+  .mainContainer .informationSection form .inputField {
+    width: 29.5rem;
+  }
+  .mainContainer .informationSection form .submitButton {
+    width: 30rem;
+  }
+  .mainContainer .informationSection form .errorDiv {
+    display: flex;
+    gap: 18rem;
+  }
+  .mainContainer .informationSection form #inputF.errorInput {
+    height: 2.7rem;
+    width: 29.5rem;
+    border-radius: 6px;
+    border: 1px solid #FF6155;
+    margin-bottom: 20px;
+    margin-left: 1.5rem;
+    background-color: hsl(0, 67%, 91%);
+  }
+  .mainContainer .figureSection {
+    position: absolute;
+    top: 0.1rem;
+    height: 350px;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+  }
+  .mainContainer .figureSection .figureImage {
+    height: 330px;
+    width: 480px;
+    border: none;
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  main {
+    width: 100%;
+  }
+  main .mainContainer {
+    height: 100vh;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  main .mainContainer .figureSection {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: auto;
+    width: 100%;
+    top: 0rem;
+  }
+  main .mainContainer .figureSection figure {
+    width: 100%;
+  }
+  main .mainContainer .figureSection figure .figureImage {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .mainContainer .informationSection {
+    top: 20.4rem;
+    border-bottom-left-radius: 0;
+    height: auto;
+  }
+  main .mainContainer .informationSection .heading {
+    font-size: clamp(1.8rem, -0.3333rem + 10.6667vw, 2.5rem);
+    margin-top: 1.7rem;
+  }
+  main .mainContainer .informationSection .headingTwo {
+    font-size: clamp(0.8rem, -0.1143rem + 4.5714vw, 1.1rem);
+    padding-right: 1rem;
+  }
+  main .mainContainer .informationSection .ulList li {
+    margin-bottom: 20px;
+    font-size: clamp(0.8rem, -0.1143rem + 4.5714vw, 1.1rem);
+    padding-right: 2rem;
+  }
+  main .mainContainer .informationSection .list-icon {
+    width: 20px;
+    padding-bottom: 2px;
+  }
+  main .mainContainer .informationSection form .errorDiv {
+    gap: 11rem;
+  }
+  main .mainContainer .informationSection form .errorDiv .email {
+    font-size: clamp(0.5rem, -0.4143rem + 4.5714vw, 0.8rem);
+  }
+  main .mainContainer .informationSection form .errorDiv #errorSpan {
+    font-size: clamp(0.5rem, -0.4143rem + 4.5714vw, 0.8rem);
+  }
+  main .mainContainer .informationSection form .inputField {
+    width: auto;
+    margin-right: 1.5rem;
+    height: 3rem;
+  }
+  main .mainContainer .informationSection form .submitButton {
+    width: auto;
+    margin-right: 1.5rem;
+    height: 3.4rem;
+  }
+  main .mainContainer .informationSection form #inputF.errorInput {
+    height: 2.7rem;
+    width: auto;
+    border-radius: 6px;
+    border: 1px solid #FF6155;
+    margin-bottom: 20px;
+    margin-left: 1.5rem;
+    background-color: hsl(0, 67%, 91%);
+  }
+  #confirmation {
+    height: 100vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  #confirmation .confirmationTick {
+    margin-top: 6rem;
+    padding-left: 1rem;
+  }
+  #confirmation #text {
+    font-size: 1rem;
+    margin-bottom: 26rem;
+    padding-left: 1rem;
+  }
+  #confirmation #confirmationButton {
+    padding-left: 1rem;
+  }
+  #confirmation .head {
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 375px) {
+  main .mainContainer .informationSection {
+    top: 18rem;
+  }
+  main .mainContainer .informationSection form .errorDiv {
+    gap: 9.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 320px) {
+  main .mainContainer .informationSection {
+    top: 15.5rem;
+  }
+  main .mainContainer .informationSection form .errorDiv {
+    gap: 9rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

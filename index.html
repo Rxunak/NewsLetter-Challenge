@@ -73,11 +73,18 @@
         </section>
         <section class="figureSection">
           <figure>
-            <img
-              src="assets/images/illustration-sign-up-desktop.svg"
-              alt="desktopImage"
-              class="figureImage"
-            />
+            <picture>
+              <source media="(max-width: 425px)" srcset="/assets/images/illustration-sign-up-mobile.svg" />
+              <source
+                media="(max-width:786px )"
+                srcset="/assets/images/illustration-sign-up-tablet.svg"
+              />
+              <img
+                src="assets/images/illustration-sign-up-desktop.svg"
+                alt="desktopImage"
+                class="figureImage"
+              />
+            </picture>
           </figure>
         </section>
       </div>
@@ -89,7 +96,7 @@
         alt="confirmationTick"
         class="confirmationTick"
       />
-      <h1>Thanks for subscribing!</h1>
+      <h1 class="head">Thanks for subscribing!</h1>
       <p id="text"></p>
       <button type="button" id="confirmButton">Dismiss message</button>
     </section>
