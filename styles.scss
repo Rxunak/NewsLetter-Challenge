@@ -83,7 +83,6 @@ main {
         font-size: 12px;
         color: $Red;
         font-weight: 600;
-    
       }
 
       .inputField {
@@ -92,6 +91,19 @@ main {
         border: 1px solid $Grey;
         margin-bottom: 20px;
         margin-left: 1.5rem;
+      }
+
+      #inputF.errorInput {
+        @include heightWidth(2.7rem, 21.5rem);
+        border-radius: 6px;
+        border: 1px solid $Red;
+        margin-bottom: 20px;
+        margin-left: 1.5rem;
+        background-color: hsl(0, 67%, 91%);
+      }
+
+      #inputF.testError::placeholder {
+        color: red;
       }
 
       .submitButton {
@@ -132,3 +144,61 @@ main {
     background-image: linear-gradient(to right, $Gradient4, $Graident3);
   }
 }
+
+#confirmation {
+  display: none;
+  outline: 2px solid black;
+  width: 370px;
+  height: 370px;
+  background-color: $white;
+  border-radius: 2rem;
+}
+
+#confirmation.activate {
+  display: block;
+}
+
+.confirmationTick {
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+#confirmation > h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: $Blue800;
+  padding-left: 2.5rem;
+  margin-top: 20px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+#text {
+  font-size: 12px;
+  color: $Blue800;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+
+#confirmButton {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  height: 2.5rem;
+  width: 18rem;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  background-color: $Blue800;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, $Gradient4, $Graident3);
+  }
+}
+
+/*---- media query ---*/
+
+

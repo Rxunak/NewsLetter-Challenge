@@ -88,6 +88,21 @@ main {
   margin-bottom: 20px;
   margin-left: 1.5rem;
 }
+.mainContainer .informationSection form #inputF.errorInput {
+  height: 2.7rem;
+  width: 21.5rem;
+  border-radius: 6px;
+  border: 1px solid #FF6155;
+  margin-bottom: 20px;
+  margin-left: 1.5rem;
+  background-color: hsl(0, 67%, 91%);
+}
+.mainContainer .informationSection form #inputF.testError::-moz-placeholder {
+  color: red;
+}
+.mainContainer .informationSection form #inputF.testError::placeholder {
+  color: red;
+}
 .mainContainer .informationSection form .submitButton {
   height: 3rem;
   width: 22rem;
@@ -120,4 +135,60 @@ main {
 }
 .mainContainer #sbutton.test {
   background-image: linear-gradient(to right, #FF6A3A, #FF527B);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+#confirmation {
+  display: none;
+  outline: 2px solid black;
+  width: 370px;
+  height: 370px;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+}
+
+#confirmation.activate {
+  display: block;
+}
+
+.confirmationTick {
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+#confirmation > h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #242742;
+  padding-left: 2.5rem;
+  margin-top: 20px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+#text {
+  font-size: 12px;
+  color: #242742;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+
+#confirmButton {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  height: 2.5rem;
+  width: 18rem;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  background-color: #242742;
+  font-weight: 600;
+}
+#confirmButton:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #FF6A3A, #FF527B);
+}
+
+/*---- media query ---*//*# sourceMappingURL=styles.css.map */
